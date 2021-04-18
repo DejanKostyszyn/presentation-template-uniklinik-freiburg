@@ -1,0 +1,158 @@
+%\input{beamer-template-colorful} % More colorful presentation
+\input{beamer-template} % Traditional colors presentation
+\begin{document}
+
+\author[Kostyszyn]{Dejan Kostyszyn}
+\date{Date of presentation}
+\title{Title of presentation}
+\subtitle{Subtitle of the presentation}
+\institute{Medical Center - University of Freiburg}
+
+
+\begin{frame}[plain, noframenumbering]
+	\titlepage
+\end{frame}
+
+
+\begin{frame}[plain, noframenumbering]{Table of contents}
+\tableofcontents[sectionstyle=show/show]
+\end{frame}
+
+
+\section[Theorems]{A list of Theorems}
+\begin{frame}
+	This is a presentation especially designed for the Medical Center - University of Freiburg im Breisgau. To do so, I used the beamer-template \cite{ctan_beamer}.
+\end{frame}
+
+
+%%%%%% Subsection Def., Cor., Thm., Proof %%%%%%
+\subsection[Def., Cor., Thm., Proof]{Definition, Corollary, Theorem and Proof}
+
+% A slide with current table of contents.
+\begin{frame}{Overview}
+\tableofcontents[currentsubsection]
+\end{frame}
+
+\begin{frame}{Theorems you can use (Part 1)}
+	\begin{definition}[A definition]
+		This is a definition.
+	\end{definition}
+	\begin{corollary}[A very important corollary]
+		This is a \alert{very important} corollary.
+	\end{corollary}
+    \begin{theorem}[A theorem]
+    	This is a theorem.
+    \end{theorem}
+    \begin{proof}[Proof for the theorem]
+    	This is a proof.
+    \end{proof}
+\end{frame}
+
+
+\begin{frame}{Theorems you can use (Part 2)}
+	\begin{proposition}[A proposition]
+		This is a proposition.
+	\end{proposition}
+	\begin{lemma}[A lemma]
+		This is a lemma.
+	\end{lemma}
+	\begin{lemma}[Another lemma]
+		This is another lemma.
+	\end{lemma}
+\end{frame}
+
+
+%%%%%%%% Subsection INCLUDE IMAGES %%%%%%%%%
+\subsection[Include images]{Including a lot of images}
+
+% A slide with current table of contents.
+\begin{frame}{Overview}
+\tableofcontents[currentsubsection]
+\end{frame}
+
+
+\begin{frame}[plain]
+	\begin{figure}
+		\centering
+		\includegraphics[scale=.2]{img/logo_uniklinik-freiburg-im-breisgau.jpg}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Some text and an image}
+\begin{columns}[T]
+    \begin{column}{.5\textwidth}
+     \begin{block}{A textblock}
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, \dots
+    \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+    \begin{block}{An image}
+    \includegraphics[width=\textwidth]{img/logo_uniklinik-freiburg-im-breisgau.jpg}
+    \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% TEXT AND MATHEMATICS %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Text and Mathematics}
+
+
+% A slide with current table of contents.
+\begin{frame}{Overview}
+\tableofcontents[currentsection]
+\end{frame}
+
+%%%%%%% Subsection TEXT %%%%%%%%
+\subsection{Text}
+
+\begin{frame}{Text}
+	\begin{itemize}
+		\item Just
+		\item some
+		\item items
+		\item and
+		\item now
+		\item maths \dots
+	\end{itemize}
+\end{frame}
+
+
+\subsection[Maths]{Mathematics}
+
+% A slide with current table of contents.
+\begin{frame}{Overview}
+\tableofcontents[currentsubsection]
+\end{frame}
+
+
+\begin{frame}{Mathematics (Part 1)}
+ 	\begin{corollary}[Kleiner Gauß]
+ 	\[
+ 	\sum_{k=1}^n k = \frac{n(n + 1)}{2}
+ 	\]
+ 	\end{corollary}
+\end{frame}
+
+
+\begin{frame}{Mathematics (Part 1)}
+ 	\begin{proof}
+	 	\begin{align}
+ 			n = 1: & \sum_{k=1}^1 k & 					&= \frac{1 \cdot (1 + 1)}{2} = 1\\
+ 			n: & \sum_{k=1}^n k &  					&= \frac{n \cdot (n + 1)}{2}, \quad n \in \mathbb{N}\\
+ 			n \rightarrow n+1: & \sum_{k=1}^{n+1} k &   &= \frac{n(n + 1)}{2} + (n + 1)\\
+ 			& & 										&= \frac{(n + 1) \cdot ((n + 1) + 1)}{2}
+ 		\end{align}
+ 	\end{proof}
+\end{frame}
+
+
+\begin{frame}{Thanks for your attention!}
+	\printbibliography
+\end{frame}
+\end{document}
