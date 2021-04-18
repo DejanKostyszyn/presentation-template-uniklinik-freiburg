@@ -5,13 +5,11 @@ A LaTeX template for presentations in the name of the [Medical Center - Universi
 To create a PDF with a presentation it is required to have installed
 - [LaTeX](https://www.latex-project.org/)
 - [beamer](https://www.ctan.org/pkg/beamer)
+- [BibLaTeX](https://www.ctan.org/pkg/biblatex)
 - Optionally: A LaTeX editor like [TeXstudio](https://www.texstudio.org/)
 
 # Project structure
-- ```presentation.tex``` is the file where the presentation is defined. If you have the requirements and TeXstudio installed, open ```presentation.tex``` and press F5. This will create a file ```presentation.pdf```, which is your presentation.
-- 
-
-# Create presentation
+- ```presentation.tex``` is the file where the presentation is defined.
 - In ```beamer-template.tex``` the style of the presentation is defined. You should not change this file, unless you exactly know what you do. Otherwise this might mess up your presentation.
 - ```beamer-template-colorful.tex``` is like ```beamer-template.tex```, but different colors were used to prettify the presentation. This first lines in ```presentation.tex``` are
   ```
@@ -23,3 +21,7 @@ To create a PDF with a presentation it is required to have installed
   \input{beamer-template-colorful} % More colorful presentation
   %\input{beamer-template} % Traditional colors presentation
   ```
+ - ```references.bib``` includes references for the bibliography. Insert all references you have there in BibLaTeX style.
+
+# Create presentation
+If you have the requirements and TeXstudio installed, open ```presentation.tex``` and press F5. This will create a file ```presentation.pdf```, which is your presentation.
